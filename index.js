@@ -1,10 +1,13 @@
 // Import required libraries
 const express = require('express');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 // Create an instance of Express.js
 const app = express();
+app.use(cors());
 app.use(express.json());
+
 
 // Secret key for JWT
 const jwtSecretKey = 'your_secret_key';
