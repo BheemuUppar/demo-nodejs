@@ -15,6 +15,10 @@ const users = [
   { id: 2, username: 'user2', password: 'password2' }
 ];
 
+
+app.get("/" , (req , res)=>{
+res.send('App is running')
+}
 // Login API endpoint
 app.post('/login', (req, res) => {
   // Extract username and password from request body
