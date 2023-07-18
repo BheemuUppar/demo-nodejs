@@ -17,8 +17,8 @@ const users = [
 
 
 app.get("/" , (req , res)=>{
-res.send('App is running')
-}
+res.render('Demo App is running')
+})
 // Login API endpoint
 app.post('/login', (req, res) => {
   // Extract username and password from request body
