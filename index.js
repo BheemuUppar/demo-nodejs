@@ -17,7 +17,7 @@ const users = [
 
 
 app.get("/" , (req , res)=>{
-res.render('Demo App is running')
+res.json('Demo App is running')
 })
 // Login API endpoint
 app.post('/login', (req, res) => {
